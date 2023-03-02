@@ -2,7 +2,7 @@ options {
 	directory "/var/cache/bind";
 
   	recursion yes;
-    	listen-on { any; };
+	listen-on { any; };
 
 	minimal-responses yes; # only minimal responses
 	recursive-clients 1500;

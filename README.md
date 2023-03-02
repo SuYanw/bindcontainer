@@ -6,7 +6,8 @@ Você deve ter uma máquina já com docker instalado, caso não tiver, pode util
 
 Após isso você pode digitar os comandos:
 ```
-docker pull
+docker pull glaubertsuyan/bind9:1.0
+docker run -itd --restart=always --name dns glaubertsuyan/bind9:1.0
 ```
 <br /><br />
 e conferir se seu DNS está funcionando:
