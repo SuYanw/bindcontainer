@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:bionic
 
 FROM ubuntu:bionic
 
@@ -12,4 +12,4 @@ COPY named.conf.options /etc/bind/named.conf.options
 
 EXPOSE 53/udp 53/tcp
 
-CMD ["/usr/sbin/named"]
+CMD ["/usr/sbin/named", "-g", "-c", "/etc/bind/named.conf"]
